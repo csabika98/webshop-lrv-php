@@ -1,44 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Simple Laravel Webshop - FAQ</title>
+@extends('layout')
 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+@section('title',"Products")
 
-  <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/grid.css') }}">
-  <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/others/oth-7/oth708.cur), auto !important;}</style>
-
-</head>
-<body> <nav>
-        <div class="nav-wrapper">
-         
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
-          <ul class="nav-container left hide-on-med-and-down">
-        
-        <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
-        <li style="float: left;"><a href="/">Home</a></li> 
-        <li style="float: left;"><a href="/products">Products</a></li>
-        <li style="float: left;"><a href="/faq">FAQ</a></li>
-        <li style="float: right;"><a href="#">Log In</a></li>
-        <li style="float: right;"><a href="#">Register</a></li>
-            
-            </div>
-          </ul>
-        </div>
-      </nav>
-<ul id="nav-mobile" class="sidenav">
-<li><a href="#!" class="sidenav-close" data-target="nav-mobile">Menu <i class="material-icons" style="float: right;margin: 0;">close</i></a></li>
-<li><div class="divider"></div></li>
-<li><a href="/">Products</a></li>
-<li><a href="/faq">FAQ</a></li>
-</ul><div class="page-container">
+@section('content')
+<div class="page-container">
 <h1>Frequently asked questions</h1>
 <div class="question-list">
 <div class="item">
@@ -142,25 +107,5 @@ information.</li>
 </div>
 </div>
 </div>
-<a class="discord" href="https://discord.com" target="_blank">
-<img src="../images/discord.png">
-</a>
-<div class="footer">
-<div class="footer-container">
-<span>&copy; 2024 Created by Csaba Sallai / https://github.com/csabika98/webshop-lrv-php</span>
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="59caaafb2e689c04285059ce-text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" type="59caaafb2e689c04285059ce-text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" type="59caaafb2e689c04285059ce-text/javascript"></script>
-<!-- <script src="https://shoppy.gg/api/embed.js" type="59caaafb2e689c04285059ce-text/javascript"></script> -->
-<!-- <script type="59caaafb2e689c04285059ce-text/javascript">
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
-        $("time.timeago").timeago();
-    });
-</script> -->
-<!--<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="59caaafb2e689c04285059ce-|49" defer=""></script> --->
 
-</body>
-</html>
+@endsection
