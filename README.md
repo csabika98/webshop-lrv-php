@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Welcome to our Laravel-based Webshop!
+## Welcome to this Laravel-based Webshop!
 
 Welcome to our modern and efficient webshop built on the Laravel framework – a platform renowned for its expressive and elegant syntax. We've designed this webshop with your convenience and satisfaction in mind, ensuring a seamless shopping experience from start to finish.
 
