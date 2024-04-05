@@ -219,11 +219,14 @@
           <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
           <ul class="nav-container left hide-on-med-and-down">
           
-        <li><a href="/">Home</a></li> 
-        <li><a href="/products">Products</a></li>
-        <li><a href="/faq">FAQ</a></li>
-        <ul class="nav navbar-right">
-            <li><a href="#">Log In</a></li>
+          
+        <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
+        <li style="float: left;"><a href="/">Home</a></li> 
+        <li style="float: left;"><a href="/products">Products</a></li>
+        <li style="float: left;"><a href="/faq">FAQ</a></li>
+        <li style="float: right;"><a href="#">Log In</a></li>
+  
+
             
             </div>
           </ul>
