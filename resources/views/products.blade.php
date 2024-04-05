@@ -6,18 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-
-  <meta name="theme-color" content="#181818">
   <title>Marketplace</title>
   <!-- <link rel="icon" type="image/png" href="./images"> -->
-  <meta name="description" content="Best cheap shop">
-  <meta name="keywords" content="cheapest shop, cheap shop, cheap">
-  <link rel="canonical" href="https://yoursite.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yoursite.com">
-  <meta property="og:title" content="Title!">
-  <meta property="og:description" content="Description!">
-  <meta property="og:image" content="{{ asset('images/logo.png') }}">
+  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
@@ -171,12 +163,10 @@
       -webkit-animation-delay: 4s, 2.5s;
       animation-delay: 4s, 2.5s
     } -->
-  </style>
-  <style type="text/css">
-    * {
-      cursor: url(https://cur.cursors-4u.net/others/oth-7/oth684.cur), auto !important;
-    }
-  </style>
+ 
+ 
+  <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/others/oth-7/oth708.cur), auto !important;}</style>
+ 
 
 <!-- <body onLoad="scrlsts()">
   </head> -->
@@ -226,13 +216,15 @@
         <div class="nav-wrapper">
          
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
           <ul class="nav-container left hide-on-med-and-down">
-            <li><a href="/">Products</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <div class="right">
-              <li>
-                <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
-              </li>
+          
+        <li><a href="/">Home</a></li> 
+        <li><a href="/products">Products</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <ul class="nav navbar-right">
+            <li><a href="#">Log In</a></li>
+            
             </div>
           </ul>
         </div>
@@ -412,15 +404,17 @@
         type="3366be35cd06e806310ce7b7-text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js"
         type="3366be35cd06e806310ce7b7-text/javascript"></script>
-      <script type="3366be35cd06e806310ce7b7-text/javascript">
-    $(document).ready(function () {
+     <!--  <script type="3366be35cd06e806310ce7b7-text/javascript">
+     $(document).ready(function () {
         $('.sidenav').sidenav();
         $("time.timeago").timeago();
-    });
-</script>
-      <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+    }); 
+</script> -->
+
+<!--      <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="3366be35cd06e806310ce7b7-|49" defer=""></script>
+  -->
     </body>
-    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <!-- <script src="https://cdn.sellix.io/static/js/embed.js"></script> -->
 
 </html>
