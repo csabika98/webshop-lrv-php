@@ -5,7 +5,9 @@
 @section('content')
 <div class="container">
     <h1>Posts</h1>
+    @auth
     <a href="{{ route('posts.create') }}" class="btn btn-primary">Create New Post</a>
+    @endauth
     @foreach ($posts as $post)
     <div class="card">
         <div class="card-content">

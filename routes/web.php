@@ -22,18 +22,30 @@ Route::get('/faq', function() {
 });
 
 // Posts routes
-Route::get('/', [PostController::class, 'index'])->name('posts.index');
-#Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+
 Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::get('/posts/{id}', [PostController::class,'show'])->name('posts_show');
 
+// Public routes
+Route::get('/', [PostController::class, 'index'])->name('posts.index');
+
+// Authenticated routes
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    // Define authenticated routes here if needed
+    //return Redirect::to('/');
 });
+
+#Route::middleware(['auth:sanctum', 'verified'])->get('/', [PostController::class, 'index'])->name('posts.index');
+
+Route::get('logout', function ()
+{
+    auth()->logout();
+    Session()->flush();
+
+    return Redirect::to('/');
+})->name('logout');

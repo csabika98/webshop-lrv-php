@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Actions\Jetstream\DeleteUser;
+use App\Http\Responses\LoginResponse;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Jetstream\Jetstream;
 
@@ -14,6 +15,11 @@ class JetstreamServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
+        // register new LoginResponse
+    $this->app->singleton(
+        \Laravel\Fortify\Contracts\LoginResponse::class,
+        \App\Http\Responses\LoginResponse::class
+    );
     }
 
     /**

@@ -212,25 +212,61 @@
     </div> -->
 
     <body>
-      <nav>
+    <nav>
         <div class="nav-wrapper">
-         
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
-          <ul class="nav-container left hide-on-med-and-down">
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
+            <ul class="nav-container left hide-on-med-and-down">
+                <li><a href="/">Home</a></li> 
+                <li><a href="/products">Products</a></li>
+                <li><a href="/faq">FAQ</a></li>
           
-          
-        <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
-        <li style="float: left;"><a href="/">Home</a></li> 
-        <li style="float: left;"><a href="/products">Products</a></li>
-        <li style="float: left;"><a href="/faq">FAQ</a></li>
-        <li style="float: right;"><a href="/login">Log In</a></li>
-        <li style="float: right;"><a href="/register">Register</a></li>
-  
+                @auth
+                    <!-- Display username and logout link if logged in -->
+                    <li style="float: right;"><a href="#">{{ Auth::user()->name }}</a></li>
+                    <form method="POST" action="{{ route('logout') }}" style="float: right;">
+                  @csrf
+                  <!---<button style="background-color:#1e2f24!important" type="submit">Logout</button>-->
+                  <li style="float: right;"><a href="{{ route('logout') }}">Log out</a></li>
+                </form>
+                @else
+                    <!-- Display login/register links if not logged in -->
+                    <li style="float: right;"><a href="/login">Log In</a></li>
+                    <li style="float: right;"><a href="/register">Register</a></li>
+                @endauth
+            </ul>
+            <!-- Hamburger menu -->
+            <a href="javascript:void(0);" class="sidenav-trigger right" onclick="toggleNavbar()">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
 
-            
-            </div>
-          </ul>
+    <!-- Hamburger menu content -->
+    <div id="navbarContent" style="display: none;">
+        <ul>
+            @auth
+             
+                    <!-- Show admin-specific options -->
+                    <li><a href="/admin/dashboard">Admin Dashboard</a></li>
+          
+                <li><a href="{{ route('logout') }}">Logout</a></li>
+            @endauth
+        </ul>
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            var x = document.getElementById("navbarContent");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+      
         </div>
       </nav>
       @yield('content')
