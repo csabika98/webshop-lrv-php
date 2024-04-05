@@ -1,3 +1,10 @@
+V2!!
+![alt text](https://github.com/csabika98/FETCHER/blob/main/screenshots/v2_1.png?raw=true)
+![alt text](https://github.com/csabika98/FETCHER/blob/main/screenshots/v2_2.png?raw=true)
+![alt text](https://github.com/csabika98/FETCHER/blob/main/screenshots/v2_3.png?raw=true)
+![alt text](https://github.com/csabika98/FETCHER/blob/main/screenshots/v2_4.png?raw=true)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
