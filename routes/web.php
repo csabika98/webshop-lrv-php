@@ -17,8 +17,11 @@ Route::get('/faq', function() {
 
 Route::get('/posts/create', [PostController::class, 'create'])->name('posts_create')->middleware(AdminMiddleware::class);
 Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts_destroy')->middleware(AdminMiddleware::class);
+Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('edit_posts')->middleware(AdminMiddleware::class);
 Route::post('/posts', [PostController::class, 'store'])->name('posts_store');
 Route::get('/posts/{id}', [PostController::class,'show'])->name('posts_show');
+Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts_update')->middleware(AdminMiddleware::class);
+
 
 // Public routes
 Route::get('/', [PostController::class, 'index'])->name('posts_index');

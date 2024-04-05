@@ -33,6 +33,34 @@ class PostController extends Controller
 
     return redirect()->route('posts_index')->with('success', 'Post deleted successfully.');
 }
+
+public function update(Request $request, $id)
+{
+    $post = Post::findOrFail($id);
+    
+    // Validate the incoming request data
+    $request->validate([
+        'title' => 'required|string|max:255',
+        'content' => 'required|string',
+    ]);
+
+    // Update the post with the new data
+    $post->update([
+        'title' => $request->title,
+        'content' => $request->content,
+    ]);
+
+    // Redirect back to the index page with a success message
+    return redirect()->route('posts_index')->with('success', 'Post updated successfully.');
+}
+
+
+public function edit($id)
+    {
+        $post = Post::findOrFail($id);
+        return view('edit_posts', compact('post'));
+    }
+
     public function store(Request $request)
     {
         // Validate the request data

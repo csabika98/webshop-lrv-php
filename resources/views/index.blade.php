@@ -21,6 +21,7 @@
             <a href="{{ route('posts_show', $post->id) }}" class="btn btn-primary">Read More</a>
             @auth
                 @if(auth()->user()->name === 'admin')
+                    <a href="{{ route('edit_posts', $post->id) }}" class="btn btn-secondary">Edit</a>
                     <form action="{{ route('posts_destroy', $post->id) }}" method="POST" style="display: inline;">
                         @csrf
                         @method('DELETE')
@@ -33,5 +34,6 @@
     @endforeach
 </div>
 @endsection
+
 
 
