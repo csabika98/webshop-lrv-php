@@ -23,10 +23,10 @@ Welcome to our modern and efficient webshop built on the Laravel framework – a
 
 ## How to install
 
-run composer install to generate depedencies in vendor folder
-change .env.example to .env
-run php artisan key:generate
-configure .env
+- **run composer install to generate depedencies in vendor folder
+- **change .env.example to .env
+- **run php artisan key:generate
+- **configure .env
 
 
 ### Why Choose Our Webshop?
