@@ -1,5 +1,5 @@
 V2!!
-![alt text](https://github.com/csabika98/FETCHER/blob/main/screenshots/v2_1.png?raw=true)
+![alt text](https://github.com/csabika98/webshop-lrv-php/blob/main/screenshots/2.png?raw=true)
 
 
 
