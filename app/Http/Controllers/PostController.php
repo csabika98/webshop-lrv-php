@@ -11,7 +11,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('index', compact('posts'));
+        $user = auth()->user();
+        #echo "$user";
+        return view('index', compact('posts', 'user'));
     }
 
     public function create()
@@ -24,7 +26,13 @@ class PostController extends Controller
     $post = Post::findOrFail($id);
     return view('posts_show', compact('post'));
 }
+    public function destroy($id)
+{
+    $post = Post::findOrFail($id);
+    $post->delete();
 
+    return redirect()->route('posts_index')->with('success', 'Post deleted successfully.');
+}
     public function store(Request $request)
     {
         // Validate the request data
@@ -40,6 +48,6 @@ class PostController extends Controller
         $post->save();
 
         // Redirect to the posts index page
-        return redirect()->route('posts.index')->with('success', 'Post created successfully!');
+        return redirect()->route('posts_index')->with('success', 'Post created successfully!');
     }
 }

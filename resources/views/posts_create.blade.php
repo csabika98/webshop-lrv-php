@@ -7,7 +7,7 @@
 @section('content')
 <div class="container">
     <h1>Add New Post</h1>
-    <form method="post" action="{{ route('posts.store') }}">
+    <form method="post" action="{{ route('posts_store') }}">
         @csrf
         <div class="form-group">
             <label for="title">Title:</label>
