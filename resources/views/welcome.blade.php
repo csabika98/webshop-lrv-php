@@ -231,7 +231,7 @@
             <li><a href="/faq">FAQ</a></li>
             <div class="right">
               <li>
-                <img class="brand-logo" src="images/logo.png" height="45px">
+                <img class="brand-logo" src="{{ asset('images/logo.png') }}" height="45px">
               </li>
             </div>
           </ul>
@@ -242,7 +242,7 @@
       <div class="content mt-5">
         <h1
           style="text-align:center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; font-size: 100px;">
-          Simple <span class="text-danger"> Webshop</span></h1>
+          Simple Laravel <span class="text-danger"> Webshop</span></h1>
       </div>
       <div class="product-container">
         <div class="grids">
