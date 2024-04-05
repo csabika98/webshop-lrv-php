@@ -21,6 +21,14 @@
 
 Welcome to our modern and efficient webshop built on the Laravel framework – a platform renowned for its expressive and elegant syntax. We've designed this webshop with your convenience and satisfaction in mind, ensuring a seamless shopping experience from start to finish.
 
+## How to install
+
+run composer install to generate depedencies in vendor folder
+change .env.example to .env
+run php artisan key:generate
+configure .env
+
+
 ### Why Choose Our Webshop?
 
 Our Laravel-based webshop offers a host of features and benefits, including:
