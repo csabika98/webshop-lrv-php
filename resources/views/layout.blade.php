@@ -224,8 +224,8 @@
         <li style="float: left;"><a href="/">Home</a></li> 
         <li style="float: left;"><a href="/products">Products</a></li>
         <li style="float: left;"><a href="/faq">FAQ</a></li>
-        <li style="float: right;"><a href="#">Log In</a></li>
-        <li style="float: right;"><a href="#">Register</a></li>
+        <li style="float: right;"><a href="/login">Log In</a></li>
+        <li style="float: right;"><a href="/register">Register</a></li>
   
 
             

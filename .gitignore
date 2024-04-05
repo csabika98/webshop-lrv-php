@@ -21,3 +21,6 @@ package.json
 composer.lock
 composer.json
 vite.config.js
+package-lock.json
+postcss.config.js
+tests
