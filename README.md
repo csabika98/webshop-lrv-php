@@ -1,4 +1,18 @@
 
+## How to install
+
+- **run the included install script .\install.ps1
+- **run composer install to generate depedencies in vendor folder
+- **change .env.example to .env
+- **change the MySQL DB credentials, MySQL 8+ supported, enter username + password
+- **run php artisan key:generate
+- **run php artisan migrate
+- **run npm install
+- **run npm run build
+- **run php artisan serve
+
+
+
 ![alt text](https://github.com/csabika98/webshop-lrv-php/blob/main/screenshots/19.png?raw=true)
 ![alt text](https://github.com/csabika98/webshop-lrv-php/blob/main/screenshots/18.png?raw=true)
 ![alt text](https://github.com/csabika98/webshop-lrv-php/blob/main/screenshots/17.png?raw=true)
@@ -30,14 +44,6 @@
 ## Welcome to this Laravel-based Webshop!
 
 Welcome to our modern and efficient webshop built on the Laravel framework – a platform renowned for its expressive and elegant syntax. We've designed this webshop with your convenience and satisfaction in mind, ensuring a seamless shopping experience from start to finish.
-
-## How to install
-
-- **run composer install to generate depedencies in vendor folder
-- **change .env.example to .env
-- **run php artisan key:generate
-- **configure .env
-
 
 ### Why Choose Our Webshop?
 
